@@ -62,7 +62,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--blue);
-  transition: all 0.3s ease;
+  height: 50px;
 }
 
 nav ul {
@@ -71,7 +71,24 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 20px 15px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+nav li::after{
+  content: "";
+  position: absolute;
+  background-color: var(--dark-grey);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  scale: 0;
+  transition: all 0.3s ease-in;
+}
+
+nav li:hover::after{
+  scale: 1;
 }
 
 nav li a {
@@ -80,7 +97,7 @@ nav li a {
   transition: all 0.3s ease;
 }
 
-nav li a:hover {
+nav li:hover a {
   color: var(--dark-grey);
 }
 
@@ -94,4 +111,19 @@ nav li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.welcome h1{
+  font-size: 60px;
+  color: var(--dark-grey);
+  text-transform: capitalize;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  z-index: -999;
+}
+
+
+.arrivals{
+  background-color: var(--blue);
+  z-index: 999;
 }
