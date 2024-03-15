@@ -1,1 +1,97 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--grey);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ------------variables--------------- */
+
+:root {
+  --light-blue: #dceff8;
+  --grey: #686d81;
+  --dark-grey: #414554;
+  --blue: #83b4f5;
+  --dark-blue: #4e719f;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--light-blue);
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+/* ---------------header section styling--------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header .logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo span {
+  color: var(--blue);
+}
+
+.logo {
+  padding: 10px 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  transition: all 0.3s ease;
+}
+
+nav ul {
+  margin-right: 15px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px 15px;
+}
+
+nav li a {
+  font-weight: bold;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+nav li a:hover {
+  color: var(--dark-grey);
+}
+
+.category {
+  margin-left: 30px;
+}
+
+/* -------------------home section----------------- */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
