@@ -34,19 +34,18 @@ section {
 header {
   display: flex;
   align-items: center;
-  flex-direction: column;
   width: 100%;
+  justify-content: space-between;
+  background-color: var(--blue);
 }
 
-header .logo {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
 
 header .logo span {
-  color: var(--blue);
+  color: var(--dark-blue);
+}
+
+.logo a {
+  color: var(--dark-grey);
 }
 
 .logo {
@@ -57,11 +56,8 @@ header .logo span {
 }
 
 nav {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--blue);
   height: 50px;
 }
 
@@ -75,7 +71,7 @@ nav li {
   position: relative;
 }
 
-nav li::after{
+nav li::after {
   content: "";
   position: absolute;
   background-color: var(--dark-grey);
@@ -87,7 +83,7 @@ nav li::after{
   transition: all 0.3s ease-in;
 }
 
-nav li:hover::after{
+nav li:hover::after {
   scale: 1;
 }
 
@@ -101,8 +97,35 @@ nav li:hover a {
   color: var(--dark-grey);
 }
 
-.category {
-  margin-left: 30px;
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  position: absolute;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1rem;
+  opacity: 0;
+  left: -0.2rem;
+  /* z-index: -1; */
+  border-radius: 0 0 15px 15px;
+  transition: all 0.2s ease-in;
+}
+
+.dropdown:hover ul {
+  bottom: -2.5rem;
+  opacity: 1;
+}
+
+.dropdown ul li::after{
+  display: none;
+}
+
+.dropdown ul li:hover a{
+  font-size: 20px;
 }
 
 /* -------------------home section----------------- */
@@ -111,19 +134,14 @@ nav li:hover a {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* align-items: center;
+  background: url(/images/background/pic1.jpg);
+  background-size: cover;
+  background-position: center;*/
 }
-.welcome h1{
+
+.welcome h1 {
   font-size: 60px;
-  color: var(--dark-grey);
+  color: var(--grey);
   text-transform: capitalize;
-  position: fixed;
-  top: 50%;
-  left: 25%;
-  z-index: -999;
-}
-
-
-.arrivals{
-  background-color: var(--blue);
-  z-index: 999;
 }
