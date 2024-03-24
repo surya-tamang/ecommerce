@@ -26,7 +26,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  height: 100vh;
   max-width: 100%;
 }
 
@@ -38,7 +38,7 @@ header {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
 }
 
 
@@ -49,6 +49,7 @@ header .logo span {
 .logo a {
   color: var(--dark-grey);
   font-weight: 900;
+  font-size: 32px;
 }
 
 .logo {
@@ -92,7 +93,6 @@ nav li:hover::after {
 
 nav li a {
   font-weight: bold;
-  color: var(--white);
   transition: all 0.3s ease;
 }
 
@@ -106,14 +106,14 @@ nav li:hover a {
 
 .dropdown ul {
   position: absolute;
-  background-color: var(--blue);
+  border-bottom: 1px solid var(--dark-grey);
   display: flex;
   justify-content: center;
   align-items: center;
   bottom: 1rem;
   opacity: 0;
   left: -0.2rem;
-  border-radius: 0 0 15px 15px;
+  border-bottom-left-radius: 8px;
   transition: all 0.2s ease-in;
 }
 
@@ -122,12 +122,16 @@ nav li:hover a {
   opacity: 1;
 }
 
+.dropdown:hover ul a {
+  font-size: 14px;
+}
+
 .dropdown ul li::after {
   display: none;
 }
 
 .dropdown ul li:hover a {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* -------------------home section----------------- */
@@ -169,7 +173,7 @@ nav li:hover a {
 }
 
 
-.welcome button:hover{
+.welcome button:hover {
   background-color: var(--dark-blue);
   color: var(--light-blue);
 }
@@ -181,6 +185,72 @@ nav li:hover a {
 .img img {
   width: 100%;
   mix-blend-mode: multiply;
+}
+
+
+/* --------------------------arrivals-------------------- */
+
+.arrivals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.arrivals i {
+  font-size: 5rem;
+  padding: 0 20px;
+  z-index: 999;
+  position: absolute;
+}
+
+.prev i {
+  transform: rotate(180deg);
+  left: 4rem;
+  top: 50%;
+}
+
+.next i {
+  right: 4rem;
+  top: 50%;
+}
+
+
+.arrivals h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 50%;
+  box-shadow: 0 0 5px var(--dark-grey);
+  height: auto;
+  display: flex;
+
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .frame {
+  overflow: hidden;
+  width: 100%;
+}
+
+.container .frame .slider {
+  display: flex;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.container .frame .slider img {
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 15px;
+  object-position: center;
 }
 
 /* -----------------offer styling------------------ */
@@ -195,6 +265,7 @@ nav li:hover a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .offer h1 {
