@@ -150,16 +150,16 @@ nav li:hover a {
 
 .welcome {
   width: 50%;
-  text-align: center;
 }
 
 .welcome h1 {
-  font-size: 3rem;
-  color: var(--grey);
+  font-size: 2rem;
+  color: var(--dark-blue);
   font-weight: 900;
+  margin-bottom: 15px;
 }
 
-.welcome button {
+button {
   margin-top: 30px;
   background-color: var(--blue);
   padding: 10px;
@@ -173,7 +173,7 @@ nav li:hover a {
 }
 
 
-.welcome button:hover {
+button:hover {
   background-color: var(--dark-blue);
   color: var(--light-blue);
 }
@@ -192,65 +192,54 @@ nav li:hover a {
 
 .arrivals {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
 }
 
-.arrivals i {
-  font-size: 5rem;
-  padding: 0 20px;
-  z-index: 999;
-  position: absolute;
+.arrival-content {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.prev i {
-  transform: rotate(180deg);
-  left: 4rem;
-  top: 50%;
-}
-
-.next i {
-  right: 4rem;
-  top: 50%;
-}
-
 
 .arrivals h1 {
   font-size: 36px;
   font-weight: 600;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
 }
 
-.container {
-  width: 50%;
-  box-shadow: 0 0 5px var(--dark-grey);
-  height: auto;
-  display: flex;
+.left,
+.right {
+  width: 49%;
+}
 
-  border-radius: 15px;
-  align-items: center;
+.left p {
+  color: var(--dark-blue);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 16px;
 }
 
-.container .frame {
-  overflow: hidden;
-  width: 100%;
-}
-
-.container .frame .slider {
-  display: flex;
-  width: 100%;
-  transition: all 0.3s ease-in;
-}
-
-.container .frame .slider img {
+swiper-slide img {
   width: 100%;
   object-fit: cover;
-
-  border-radius: 15px;
-  object-position: center;
+  border-radius: 16px;
 }
 
 /* -----------------offer styling------------------ */

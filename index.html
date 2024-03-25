@@ -42,11 +42,14 @@
     <!-- -----------------main section---------- -->
 
     <main>
-
+        <!-- -------------------home section --------------------- -->
         <section class="home" id="home">
             <div class="homecontent">
                 <div class="welcome">
-                    <h1>You are not ugly, you are just not dressing up good</h1>
+                    <h1>Welcome to Fashionbazar - Where Style Meets Comfort!</h1>
+                    <p> We extend a heartfelt welcome to you, our valued visitor, to embark on a journey of fashion
+                        exploration and discovery.
+                    </p>
                     <a href="#explore"><button>Explore, Choose and Glow up</button></a>
                 </div>
                 <div class="img">
@@ -55,39 +58,48 @@
             </div>
         </section>
 
+        <!-- --------------------offer--------------------- -->
+
         <div class="offer">
             <h1>20% off in everything</h1>
         </div>
 
+        <!-- ----------------------new arrivals------------------------ -->
+
         <section class="arrivals" id="explore">
 
-            <h1>Our latest arrivals</h1>
-            <!-- <div class="slider">
-                <div class="prev"><i class="fa-solid fa-greater-than"></i></div>
-                <div class="frame">
-                    <img src="/images/boys/arrival2.jpg" alt="">
-                    <img src="/images/boys/arrival1.jpg" alt="">
-                    <img src="/images/girls/arrival3.jpg" alt="">
-                    <img src="/images/girls/arrival1.jpg" alt="">
-                </div>
-                <div class="next"><i class="fa-solid fa-greater-than"></i></div>
-            </div> -->
+            <div class="arrival-content">
 
-            <div class="prev"><i class="fa-solid fa-greater-than"></i></div>
-            <div class="container">
-                <div class="frame">
-                    <div class="slider">
-
-                        <img src="/images/boys/arrival2.jpg" alt="">
-                        <img src="/images/boys/arrival2.jpg" alt="">
-                        <img src="/images/boys/arrival2.jpg" alt="">
-                        <img src="/images/boys/arrival2.jpg" alt="">
-                    </div>
+                <div class="left">
+                    <h1>Introducing Our Latest Arrivals:</h1>
+                    <p>Elevate Your Style with Fresh Fashion</p>
+                    <article>
+                        Step into the world of fashion reinvention with our newest collection! We're thrilled to
+                        uncover our latest arrivals, meticulously curated to bring you the trendiest, most versatile pieces of
+                        the season.
+                    </article>
+                    <button>See more</button>
                 </div>
+
+                <div class="right">
+                    <swiper-container class="mySwiper" navigation="true" pagination="true" mousewheel="true"
+                        css-mode="true" loop="true">
+                        <swiper-slide><img src="/images/boys/arrival2.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="/images/boys/arrival4.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="/images/girls/arrival1.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="/images/girls/arrival3.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="/images/girls/arrival5.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="/images/girls/arrival6.jpg" alt=""></swiper-slide>
+                    </swiper-container>
+                </div>
+
             </div>
 
-            <div class="next"><i class="fa-solid fa-greater-than"></i></div>
         </section>
+
+
+
+        <!-- -----------------about section-------------------- -->
 
         <section></section>
 
@@ -96,7 +108,7 @@
     <!-- ---------------footer section---------------- -->
 
     <footer></footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="/javascript/script.js"></script>
 </body>
 
