@@ -329,13 +329,90 @@ swiper-slide img {
   color: var(--dark-blue);
 }
 
+/* ---------------contact us----------------- */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 80vh;
+}
+
+.informations {
+  width: 49%;
+}
+
+.informations h1 {
+  color: var(--dark-blue);
+  font-size: 36px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+iframe {
+  border-radius: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 49%;
+  gap: 20px;
+  background-color: var(--blue);
+  height: 100%;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+form input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+}
+
+form button:hover {
+  box-shadow: 1px 1px 5px var(--light-blue);
+}
+
 /* --------------------footer ------------------ */
 
 footer {
   background-color: var(--dark-blue);
 }
 
-footer p{
+footer p {
   padding: 30px;
   text-align: center;
   color: var(--light-blue);
