@@ -302,6 +302,38 @@ swiper-slide img {
   justify-content: space-around;
   flex-direction: column;
   margin-top: 50px;
+  position: relative;
+  background-color: var(--blue);
+}
+
+.wave {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background: var(--blue);
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: var(--light-blue);
+  right: 0;
+  top: 60%;
+}
+.wave::after {
+  width: 52%;
+  height: 100%;
+  background-color: var(--blue);
+  left: 0;
+  top: 40%;
 }
 
 .about-content {
@@ -329,6 +361,24 @@ swiper-slide img {
   color: var(--dark-blue);
 }
 
+/* .triangle {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 100px;
+  border-color: var(--blue) transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+} */
+
 /* ---------------contact us----------------- */
 
 .contact {
@@ -348,6 +398,7 @@ swiper-slide img {
 
 .informations {
   width: 49%;
+  z-index: 999;
 }
 
 .informations h1 {
@@ -371,9 +422,10 @@ form {
   flex-direction: column;
   justify-content: center;
   width: 49%;
+  z-index: 999;
   gap: 20px;
   background-color: var(--blue);
-  height: 100%;
+  height: 80%;
   padding: 20px;
   border-radius: 15px;
 }
