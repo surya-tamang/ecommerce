@@ -314,7 +314,8 @@ swiper-slide img {
   bottom: 0;
 }
 
-.wave::before, .wave::after {
+.wave::before,
+.wave::after {
   content: "";
   display: block;
   position: absolute;
@@ -328,6 +329,7 @@ swiper-slide img {
   right: 0;
   top: 60%;
 }
+
 .wave::after {
   width: 52%;
   height: 100%;
@@ -438,6 +440,11 @@ textarea {
   outline: none;
 }
 
+form input:focus,
+textarea:focus {
+  border: 2px solid var(--dark-grey);
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -469,4 +476,46 @@ footer p {
   text-align: center;
   color: var(--light-blue);
   font-weight: 600;
+}
+
+
+/* **************responsive************************ */
+
+@media screen and (max-width:1024px) {
+
+  .homecontent,
+  .arrival-content,
+  .contact-content {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .welcome {
+    width: 80%;
+    text-align: center;
+  }
+
+  .welcome button {
+    width: 50%;
+  }
+
+  .img {
+    width: 80%;
+  }
+
+  .left {
+    width: 80%;
+  }
+
+  .left button {
+    width: 15%;
+    float: left;
+  }
+
+  .right {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
 }
